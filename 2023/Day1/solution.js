@@ -1,3 +1,4 @@
+// --- Day 1: Trebuchet?! ---
 const { input } = require("./input.js");
 
 function isNumber(char) {
