@@ -12,8 +12,7 @@ input.split("\n").forEach((line, lineIndex) => {
         cube = cube.trim();        
 
         Object.entries(control).forEach((color) => {
-            const colorText = color[0];
-            const colorLimit = color[1];
+            const [colorText, colorLimit] = color;
             if (cube.includes(colorText)) {
                 const value = Number(cube.replace(colorText, "").trim());
 
