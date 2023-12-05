@@ -9,7 +9,7 @@ input.split("\n").forEach((line, lineIndex) => {
     let controlLine = { "red": 0, "green": 0, "blue": 0 };
     let isValid = true;
     line.split(":")[1].trim().replaceAll(";", ",").split(",").forEach((cube) => {
-        cube = cube.trim();        
+        cube = cube.trim();
 
         Object.entries(control).forEach((color) => {
             const [colorText, colorLimit] = color;
